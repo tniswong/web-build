@@ -1,4 +1,4 @@
-export default class {
+export default class HelloWorldController {
 
     static get $inject() {
         return ['$log'];
