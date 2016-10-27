@@ -30,8 +30,8 @@ module.exports = (karma) => {
         babelPreprocessor: {
 
             options: {
-                sourceMap: 'inline',
-                blacklist: ['useStrict']
+                presets: ['es2015'],
+                sourceMap: 'inline'
             },
 
             sourceFileName: (file) => {
