@@ -81,7 +81,7 @@ gulp.task('test:unit:debug', ['jshint'], () => {
         configFile: paths.build('karma.conf.js'),
 
         browsers: ['Chrome'],
-        reporters: ['progress', 'html'],
+        reporters: ['progress', 'kjhtml'],
 
         preprocessors: preProcessors
 
