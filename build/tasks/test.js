@@ -60,8 +60,8 @@ gulp.task('test:unit', ['jshint'], (done) => {
 
     }, () => {});
 
-    server.on('run_complete', () => {
-        done();
+    server.on('run_complete', (browsers, results) => {
+        done(results.exitCode);
     });
 
     server.start();

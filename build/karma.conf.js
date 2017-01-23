@@ -9,10 +9,10 @@ module.exports = (karma) => {
 
         port: 9876,
         colors: true,
-        logLevel: karma.LOG_ERROR, // possible values: karma.LOG_DISABLE || karma.LOG_ERROR || karma.LOG_WARN || karma.LOG_INFO || karma.LOG_DEBUG
+        logLevel: karma.ERROR,
 
         files: [
-            paths.nodeModules('babel-core/browser-polyfill.js')
+            paths.jspm.babel('browser-polyfill.js')
         ],
 
         jspm: {

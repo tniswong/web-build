@@ -79,7 +79,8 @@ exports.paths = new PathCalculator({
         root: 'jspm_packages/',
         folders: {
             fontAwesome: pkg.jspm.dependencies['font-awesome'].replace(/:/, '/') + '/',
-            twitterBootstrap: pkg.jspm.dependencies.bootstrap.replace(/:/, '/') + '/'
+            twitterBootstrap: pkg.jspm.dependencies.bootstrap.replace(/:/, '/') + '/',
+            babel: pkg.jspm.devDependencies['babel'].replace(/:/, '/') + '/',
         }
 
     },
